@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="522.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainViewController">
+   <children>
+      <VBox layoutX="28.0" layoutY="208.0" prefHeight="300.0" prefWidth="300.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="label41" text="Farbe der Blume">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="label21" text="Farbe der Blume">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="label22" text="Farbe der Blume">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="label31" text="Farbe der Blume">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="label1" text="Farbe der Blume">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="label32" text="Farbe der Blume">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="label23" text="Farbe der Blume">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="label24" text="Farbe der Blume">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="300.0">
+               <children>
+                  <Label fx:id="label42" text="Farbe der Blume">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" layoutX="28.0" layoutY="14.0" prefHeight="175.0" prefWidth="163.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Label text="Wähle deine Lieblingsfarben" />
+            <CheckBox alignment="CENTER" mnemonicParsing="false" onAction="#getLieblingsfarben" text="rot">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="7.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox alignment="CENTER" mnemonicParsing="false" onAction="#getLieblingsfarben" text="rosa">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="7.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox alignment="CENTER" mnemonicParsing="false" onAction="#getLieblingsfarben" text="orange">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="7.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox alignment="CENTER" mnemonicParsing="false" onAction="#getLieblingsfarben" text="grün">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="7.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox alignment="CENTER" mnemonicParsing="false" onAction="#getLieblingsfarben" text="türkis">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="7.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox alignment="CENTER" mnemonicParsing="false" onAction="#getLieblingsfarben" text="blau">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="7.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox alignment="CENTER" mnemonicParsing="false" onAction="#getLieblingsfarben" text="gelb">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="7.0" />
+               </VBox.margin>
+            </CheckBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="238.0" layoutY="44.0" prefHeight="145.0" prefWidth="222.0">
+         <children>
+            <Label text="Geben Sie Lieblingsfarbkombinationen ein" />
+            <HBox prefHeight="39.0" prefWidth="222.0">
+               <children>
+                  <ChoiceBox fx:id="farbe1" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+                  <ChoiceBox fx:id="farbe2" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+            </HBox>
+            <Label text="Inwiefern ist es Ihr Lieblingskombination?" />
+            <Slider fx:id="preferenzWert" max="10.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Slider>
+            <Button mnemonicParsing="false" onAction="#bestaetigen" text="Bestätigen" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
